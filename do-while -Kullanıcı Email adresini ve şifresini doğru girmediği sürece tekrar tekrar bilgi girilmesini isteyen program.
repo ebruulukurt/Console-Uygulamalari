@@ -1,0 +1,11 @@
+string Email = "";
+string Sifre = "";
+
+do
+{
+    Console.WriteLine("Email Gir :");
+    Email = Console.ReadLine();
+    Console.WriteLine("Şifre Gir :");
+    Sifre = Console.ReadLine();
+
+} while (Email != "admin@admin.com" && Sifre != "1234");

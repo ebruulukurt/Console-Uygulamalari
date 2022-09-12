@@ -1,0 +1,5 @@
+Console.WriteLine("Bir Metin Yazınız :");
+string GirilenMetin = Console.ReadLine();
+Console.WriteLine("Sayı Gir :");
+int GirilenSayi1 = int.Parse(Console.ReadLine());
+Console.WriteLine(GirilenMetin.Substring(0, GirilenSayi1));

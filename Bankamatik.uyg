@@ -1,0 +1,67 @@
+double Bakiye = 2500;
+double CekilenTutar = 0;
+double YatirilanTutar = 0;
+byte islem = 0;
+string Sifre = "";
+string KartNo = "";
+Console.WriteLine("Hoş Geldiniz");
+// Kullanıcı Girişi Yönetimi
+do
+{
+    Console.WriteLine("Lütfen Kart Numaranızı Giriniz :");
+    KartNo = Console.ReadLine();
+    if (KartNo == "123456789")
+    {
+        do
+        {
+            Console.WriteLine("Lütfen Şifrenizi Giriniz :");
+            Sifre = Console.ReadLine();
+            if (Sifre != "1234")
+            {
+                Console.WriteLine("Yanlış Şifre");
+            }
+        } while (Sifre != "1234");
+    }
+    else
+    {
+        Console.WriteLine("Yanlış Kart No");
+    }
+
+} while (KartNo != "123456789");
+Console.Clear();
+// Parasal işlemler
+do
+{
+    Console.WriteLine("Bakiyeniz : " + Bakiye.ToString("N"));
+    Console.WriteLine("Yapmak istediğiniz İşlem Nedir ?");
+    Console.WriteLine("1.Para Çekme / 2. Para Yatırma / 3.Çıkış");
+    islem = byte.Parse(Console.ReadLine());
+    if (islem == 1) // Para Çekilecek
+    {
+        Console.WriteLine("Çekmek istenilen Miktar ?");
+        CekilenTutar = double.Parse(Console.ReadLine());
+        if (CekilenTutar < Bakiye)
+        {
+            Bakiye -= CekilenTutar;
+            Console.WriteLine("Para Çekme İşlemi Başarılı.");
+        }
+        else
+        {
+            Console.WriteLine("Yetersiz Bakiye.");
+        }
+        Console.Clear();
+    }
+    else if (islem == 2) // Para Yatırılacak
+    {
+        Console.WriteLine("Yatırmak istediğiniz Miktar ?");
+        YatirilanTutar = double.Parse(Console.ReadLine());
+        Bakiye += YatirilanTutar;
+        Console.WriteLine("Para Yatırma İşlemi,  Başarılı.");
+        Console.Clear();
+    }
+    else if (islem == 3) // Çıkış Yapılacak
+    {
+        Console.Clear();
+        Console.WriteLine("Çıkış Yapılıyor");
+    }
+} while (islem != 3);

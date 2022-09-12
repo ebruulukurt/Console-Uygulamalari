@@ -1,0 +1,10 @@
+Console.WriteLine("Kaç MEtre Kumaş Aldın ");
+int Kumas = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Kumaş'ı Ne kadar'a Aldın ?");
+double OdenenPara = double.Parse(Console.ReadLine());
+
+Console.WriteLine("Kumaş'ı Ne kadara Sattın ?");
+double AlinanPara = double.Parse(Console.ReadLine());
+
+Console.WriteLine(AlinanPara - OdenenPara);

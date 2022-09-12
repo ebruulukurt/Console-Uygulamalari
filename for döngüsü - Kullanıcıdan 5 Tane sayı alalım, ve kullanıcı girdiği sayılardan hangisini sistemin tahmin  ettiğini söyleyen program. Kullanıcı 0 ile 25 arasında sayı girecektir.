@@ -1,0 +1,14 @@
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine("Sayı Gir : ( 0 ile 10 Arasında )");
+    int Sayi = int.Parse(Console.ReadLine());
+
+    if (Sayi == new Random().Next(0, 10))
+    {
+        Console.WriteLine("Tebrikler, Doğru");
+    }
+    else
+    {
+        Console.WriteLine("Üzgünüm, Yanlış");
+    }
+}

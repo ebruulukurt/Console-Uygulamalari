@@ -1,0 +1,16 @@
+Soru : Kullanıcıdan Not Bilgisi alalım, kullanıcının girdiği NOT 45 'den büyük ise, kullanıcıdan ikinci bir not bilgisi alalım ve
+iki notun ortalamasını ekrana yansıtalım. Eğer Girilen ilk not 45'den küçük ise Başarısız cevabını ekrana veren progrram.
+Cevap: 
+
+Console.WriteLine("Not Gir :");
+int Not1 = int.Parse(Console.ReadLine());
+if (Not1 > 45)
+{
+    Console.WriteLine("Not Gir :");
+    int Not2 = int.Parse(Console.ReadLine());
+    Console.WriteLine((Not1 + Not2) / 2);
+}
+else
+{
+    Console.WriteLine("Başarısız");
+}

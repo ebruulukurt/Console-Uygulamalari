@@ -1,0 +1,29 @@
+1. İşçi Bekar ise hiç yardım almayacak, Evli ise Eş durumundan Maaş ilaveten 250 TL eklenecektir.
+2.Çocuk Sayısı 1 ise Maaşın %5'i kadar, Çocuk Sayısı 2 ise %10'u, 3 ve daha fazla çocuğu olanlar %15 Aile yardımı almaktadır.
+Kullanıcıdan Maaş bilgisi ve Çocuk Sayısını ve evli olup olmadığını öğrenelim, yukarıdaki şartlara göre hesaplama yaptıralım.
+
+Console.WriteLine("Maaş bilgisi giriniz :");
+double Maas = double.Parse(Console.ReadLine());
+Console.WriteLine("Medeni Halini (Evli/Bekar)");
+string cevap = Console.ReadLine();
+if(cevap=="Evli" || cevap=="Bekar")
+{
+    Console.WriteLine("Çocuk sayısını giriniz :");
+    int CocukSayisi = int.Parse(Console.ReadLine());
+    if(CocukSayisi==1)
+    {
+        Console.WriteLine("Maaşınız :" + ((Maas+250)*1.05));
+    }
+    else if(CocukSayisi==2)
+    {
+        Console.WriteLine("Maaşınız :" + ((Maas + 250) * 1.10));
+    }
+    else if(CocukSayisi>=3)
+    {
+        Console.WriteLine("Maaşınız :" + ((Maas + 250) * 1.15));
+    }
+    else
+    {
+        Console.WriteLine("Maaşınız :" + Maas);
+    }
+}

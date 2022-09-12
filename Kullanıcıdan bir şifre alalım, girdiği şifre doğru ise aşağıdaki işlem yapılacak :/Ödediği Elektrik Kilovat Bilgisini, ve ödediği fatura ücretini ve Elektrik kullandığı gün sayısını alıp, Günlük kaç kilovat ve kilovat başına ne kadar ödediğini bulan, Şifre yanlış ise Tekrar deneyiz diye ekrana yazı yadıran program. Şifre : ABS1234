@@ -1,0 +1,19 @@
+Console.WriteLine("Şifre Gir :");
+string Sifree = Console.ReadLine();
+
+if (Sifree == "ABS1234")
+{
+    Console.WriteLine("Kaç KW Kullandın ?");
+    int Kilowat = int.Parse(Console.ReadLine());
+    Console.WriteLine("Ne Kadar Ödedin ?");
+    int Ucret = int.Parse(Console.ReadLine());
+    Console.WriteLine("Kaç Gün  Kullandın");
+    int Gun = int.Parse(Console.ReadLine());
+
+    Console.WriteLine("Kilowat Başına Ödenen : " + (Ucret / Kilowat));
+    Console.WriteLine("Günlük KW : " + (Kilowat / Gun));
+}
+else
+{
+    Console.WriteLine("Şifre Yanlış");
+}

@@ -1,0 +1,23 @@
+Console.WriteLine("Not Gir :");
+int Not1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Not Gir :");
+int Not2 = int.Parse(Console.ReadLine());
+int Ortalama = (Not1 + Not2) / 2;
+if (Ortalama < 45)
+{
+    Console.WriteLine("Not Gir :");
+    int Not3 = int.Parse(Console.ReadLine());
+    Ortalama = (Not1 + Not2 + Not3) / 3;
+    if (Ortalama < 45)
+    {
+        Console.WriteLine("Kaldı");
+    }
+    else
+    {
+        Console.WriteLine("Geçti");
+    }
+}
+else
+{
+    Console.WriteLine("Geçti.");
+}

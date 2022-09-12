@@ -1,0 +1,7 @@
+string Harf = "";
+do
+{
+    Console.WriteLine("Harf Gir ");
+    Harf = Console.ReadLine();
+
+} while (Harf != "e");// E Harfi girilmediği sürece tekrar tekrar aynı soru sorulur.

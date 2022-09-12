@@ -1,0 +1,13 @@
+int AlinanSayi = 0;
+int Toplam = 0;
+do
+{
+    Console.WriteLine("Sayı Gir :");
+    AlinanSayi = int.Parse(Console.ReadLine());
+    if (AlinanSayi % 2 == 0)
+    {
+        Toplam += AlinanSayi;
+    }
+
+} while (AlinanSayi % 2 == 0);
+Console.WriteLine(Toplam);

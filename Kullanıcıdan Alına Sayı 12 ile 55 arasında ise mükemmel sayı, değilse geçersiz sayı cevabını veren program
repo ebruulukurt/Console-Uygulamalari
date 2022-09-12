@@ -1,0 +1,10 @@
+Console.WriteLine("Sayı Gir :");
+int GirilenSayi = int.Parse(Console.ReadLine());
+if (GirilenSayi > 12 && GirilenSayi < 55)
+{
+    Console.WriteLine("mükemmel Sayı.");
+}
+else
+{
+    Console.WriteLine("Geçersiz");
+}

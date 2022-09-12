@@ -1,2 +1,0 @@
-# Console-Uygulamalari
-Console Ornekleri

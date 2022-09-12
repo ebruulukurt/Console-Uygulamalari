@@ -1,0 +1,10 @@
+Console.WriteLine("Notunuzu giriniz :");
+byte Not = byte.Parse(Console.ReadLine());
+if (Not > 45)
+{
+    Console.WriteLine("Geçti");
+}
+else
+{
+    Console.WriteLine("Kaldı");
+}

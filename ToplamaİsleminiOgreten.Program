@@ -1,0 +1,38 @@
+Toplama işlemini öğretmeye çalışan bir oyun programı yazılacaktır. Oyun başladığı zaman rastgele 2 tane 1-100 arasında sayı tutulacak,
+tutulan sayılar ekrana gösterilecek ve kullanıcıya bu sayıların toplamı nedir diye sorulacaktır.
+Eğer kullanıcı doğru cevap verirse “Tebrikler Bildiniz” değil ise “Üzgünüm Bilemediniz” diye mesaj verecektir.
+Her cevaptan sonra “Tekrar Oynamak istiyormusunuz(e/E)?” şeklinde bir soru sorulacak ve eğer kullanıcı “e” veya “E” ile karşılık verirse oyun
+tekrar başlayacaktır. Kullanıcının puanı her doğru cevap için 5 puan artacak, her yanlış cevap için ise 2 puan azalacaktır.
+Oyun sonlandığında kullanıcının verdiği doğru cevap sayısı, yanlış cevap sayısı ve puanı ekranda listelenmelidir. Bu işlemleri yapan programın kodlarını yazınız.
+
+int Puan = 0;
+int YanlisCevap = 0;
+int DogruCevap = 0;
+int Random1 = 0;
+int Random2 = 0;
+string islem = "";
+int Toplam = 0;
+do
+{
+    Random1 = new Random().Next(1, 100);
+    Random2 = new Random().Next(1, 100);
+    Console.WriteLine(Random1 + " + " + Random2 + " = ?");
+    Toplam = int.Parse(Console.ReadLine());
+    if (Toplam == (Random1 + Random2))
+    {
+        Console.WriteLine("Tebrikler Bildiniz");
+        Puan += 5;
+        DogruCevap++;
+    }
+    else
+    {
+        Console.WriteLine("Üzgünüm Bilemediniz,");
+        Puan -= 2;
+        YanlisCevap++;
+    }
+    Console.WriteLine("Tekrar Oynamak istiyormusunuz(e/E)");
+    islem = Console.ReadLine();
+} while (islem.ToLower() == "e");
+Console.WriteLine("Puan : " + Puan);
+Console.WriteLine("Yanlış : " + YanlisCevap);
+Console.WriteLine("Doğru : " + DogruCevap);

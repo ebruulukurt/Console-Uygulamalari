@@ -1,0 +1,21 @@
+int Dogru = 0;
+int Yanlis = 0;
+for (int i = 0; i < 6; i++)
+{
+    Console.WriteLine("Email Gir :");
+    string Email = Console.ReadLine();
+
+    Console.WriteLine("Şifre Gir :");
+    int Sifre = int.Parse(Console.ReadLine());
+
+    if (Email == "admin@admin.com" && Sifre == 1234)
+    {
+        Dogru++;
+    }
+    else
+    {
+        Yanlis++;
+    }
+}
+Console.WriteLine("Doğru Giriş : " + Dogru);
+Console.WriteLine("Yanlış Giriş : " + Yanlis);

@@ -1,0 +1,19 @@
+Console.WriteLine("Not Gir :");
+int GirilenNot = int.Parse(Console.ReadLine());
+
+if (GirilenNot < 45)
+{
+    Console.WriteLine("Kaldı");
+}
+else if (GirilenNot > 45 && 70 > GirilenNot)
+{
+    Console.WriteLine("Geçti");
+}
+else if (GirilenNot > 70 && 100 > GirilenNot)
+{
+    Console.WriteLine("Onur Belgesi");
+}
+else
+{
+    Console.WriteLine("Geçersiz Not");
+}

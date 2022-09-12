@@ -1,0 +1,9 @@
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine("Sayı Gir :");
+    int Sayi = int.Parse(Console.ReadLine());
+    if (10 < Sayi && Sayi < 100)
+    {
+        Console.WriteLine(Sayi);
+    }
+}

@@ -1,0 +1,13 @@
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine("Sayı Gir :");
+    int Sayi = int.Parse(Console.ReadLine());
+    if (Sayi % 7 == 0 && Sayi % 5 == 0)
+    {
+        Console.WriteLine(Sayi * 3);
+    }
+    else
+    {
+        Console.WriteLine(Sayi / 2);
+    }
+}

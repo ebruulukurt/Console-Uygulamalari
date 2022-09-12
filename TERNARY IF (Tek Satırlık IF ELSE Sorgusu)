@@ -1,0 +1,4 @@
+Sadece Ekrana Bilgilendirme mesajı yazdırmak için kullanılan yapıdır.
+ Çıkan işlemin sonucuna göre extra işlemler yapılamaz, sadece bilgi verilir.
+ IF ELSE'deki gibi ikinci bir ihtimal yoktur. EVET YADA HAYIR'dır.
+Console.WriteLine((5 > 4) ? "Büyüktür" : "Küçüktür");

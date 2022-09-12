@@ -1,0 +1,7 @@
+Console.WriteLine("Sayi Gir ");
+double Sayi3 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Sayi Gir ");
+double Sayi4 = int.Parse(Console.ReadLine());
+
+Console.WriteLine(Sayi3 / Sayi4);

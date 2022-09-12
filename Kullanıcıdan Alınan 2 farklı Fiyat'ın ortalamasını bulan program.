@@ -1,0 +1,7 @@
+Console.WriteLine("Fiyat Gir :");
+double Fiyat1 = double.Parse(Console.ReadLine());
+
+Console.WriteLine("Fiyat Gir :");
+double Fiyat2 = double.Parse(Console.ReadLine());
+
+Console.WriteLine((Fiyat1 + Fiyat2) / 2);

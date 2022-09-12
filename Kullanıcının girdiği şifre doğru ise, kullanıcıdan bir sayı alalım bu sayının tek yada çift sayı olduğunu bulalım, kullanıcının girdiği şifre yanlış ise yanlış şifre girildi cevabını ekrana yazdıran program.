@@ -1,0 +1,12 @@
+Console.WriteLine("Şifre Gir");
+string SoruSifre = Console.ReadLine();
+if (SoruSifre == "abc123")
+{
+    Console.WriteLine("Sayı Gir :");
+    int TekCiftSayi = int.Parse(Console.ReadLine());
+    Console.WriteLine((TekCiftSayi % 2 == 0) ? "Çift" : "Tektir.");
+}
+else
+{
+    Console.WriteLine("Şifre Başarısız");
+}

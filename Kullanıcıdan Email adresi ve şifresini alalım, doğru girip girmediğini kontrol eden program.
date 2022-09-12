@@ -1,0 +1,7 @@
+Console.WriteLine("Email Adresin");
+string Email1 = Console.ReadLine();
+
+Console.WriteLine("Şifre");
+string Sifre = Console.ReadLine();
+
+Console.WriteLine(Email1 == "admin@admin.com" && Sifre == "123");

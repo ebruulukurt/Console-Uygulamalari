@@ -1,0 +1,12 @@
+Console.WriteLine("Email Adreis Gir :");
+string Email = Console.ReadLine();
+Console.WriteLine("Şifre Gir :");
+string Sifre = Console.ReadLine();
+if (Email == "admin@admin.com" && Sifre == "1234")
+{
+    Console.WriteLine("Giriş Başarılı");
+}
+else
+{
+    Console.WriteLine("Giriş Başarısız");
+}

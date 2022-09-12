@@ -1,0 +1,31 @@
+//***APARATİFLER**
+//string Kelime = "Harun Hikmet Gülerarslan";
+// belirtilen kelimedeki bütün harfleri küçük harfe dönüştürme
+//Console.WriteLine(Kelime.ToLower());
+
+//belirtilen kelimdeki bütün harfleri büyük harfe dönüştürme
+//Console.WriteLine(Kelime.ToUpper());
+
+//harf sayısını bulma
+//Console.WriteLine(Kelime.Count());
+
+//belirtilen harfi değiştirme
+//Console.WriteLine(Kelime.Replace("a","*"));
+
+//belirtilen kelimeyi belirtilen kadar yazdırma
+//Console.WriteLine(Kelime.Substring(0, 10) + "...");
+
+//belirtilen kelimede belirtilen harfin olup olmadığını bulmak
+////Console.WriteLine(Kelime.Contains("Ha"));
+
+//tarih istedğimiz formatta yazdırma
+//Console.WriteLine(DateTime.Now);
+//Console.WriteLine(DateTime.Now.ToString("dd-MM-yyyy"));
+//Console.WriteLine(DateTime.Now.ToString("dddd-MMMM-yyyy"));
+//Console.WriteLine(DateTime.Now.ToString("HH:mm:ss"));
+
+//ondalıklı ifadeleri parasal ifade olarak yazdırma
+////double Para = 2500;
+//Console.WriteLine(Para);
+//Console.WriteLine(Para.ToString("N"));//türk lirasına çevirir.
+//C/*onsole.WriteLine(Para.ToString("C")); // türk lirası simgesini koymamızı sağlar

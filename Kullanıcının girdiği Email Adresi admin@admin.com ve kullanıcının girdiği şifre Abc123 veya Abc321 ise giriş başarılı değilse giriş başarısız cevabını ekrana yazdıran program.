@@ -1,0 +1,5 @@
+Console.WriteLine("Email Adresi Gir :");
+string GirilenEmail = Console.ReadLine();
+Console.WriteLine("Şifre Gir :");
+string GirilenSifre = Console.ReadLine();
+Console.WriteLine((GirilenEmail == "admin@admin.com" && (Sifre == "abc123" || Sifre == "abc321")) ? "Giriş Başarılı" : "Giriş Başarısız");

@@ -1,0 +1,12 @@
+int Toplamm = 0;
+int GirilenSayi = 0;
+do
+{
+    Console.WriteLine("Sayı Gir :");
+    GirilenSayi = int.Parse(Console.ReadLine());
+    if (GirilenSayi > 12 && GirilenSayi < 40)
+    {
+        Toplamm += GirilenSayi;
+    }
+} while (GirilenSayi > 12 && GirilenSayi < 40);
+Console.WriteLine(Toplamm);

@@ -1,0 +1,15 @@
+int TekToplam = 0;
+int CiftToplam = 0;
+for (int i = 0; i < 7; i++)
+{
+    Console.WriteLine("Sayı Gir :");
+    int Sayi = int.Parse(Console.ReadLine());
+    if (Sayi % 2 == 0)
+    {
+        CiftToplam += Sayi;
+    }
+    else
+    {
+        TekToplam += Sayi;
+    }
+}

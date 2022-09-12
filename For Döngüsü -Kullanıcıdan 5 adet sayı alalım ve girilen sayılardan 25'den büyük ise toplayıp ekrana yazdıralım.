@@ -1,0 +1,11 @@
+int Toplanan = 0;
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine("Sayı Gir :");
+    int Sayi1 = int.Parse(Console.ReadLine());
+    if (Sayi1 > 25)
+    {
+        Toplanan += Sayi1;
+    }
+}
+Console.WriteLine(Toplanan);

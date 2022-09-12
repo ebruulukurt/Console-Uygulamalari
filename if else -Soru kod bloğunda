@@ -1,0 +1,29 @@
+//Kullanıcıdan alınan bilgilere göre aşağıdaki kurallar uygulanacak!!!
+//1. Kullanıcı hafta sonu çalıştı ise kullanıcının maaşına ücretinin 2 katı kadar ücret eklenecek.
+//2.kullanıcı iş yerine 3 defa geç kaldı ise maaşından 250 TL kesilecektir.
+//3.Kullanıcıdan günlük çalışma ücretini ve kaç gün çalıştığını hafta sonu çalışıp çalışmadığını ve geç kalıpp kalmadığını öğrenip işlemleri yapalım.
+
+CEVAP:
+Console.WriteLine("Günlük çalışma ücretini giriniz :");
+double GunlukUCret=double.Parse(Console.ReadLine());
+
+Console.WriteLine("Kaç gün çalıştınız :");
+int Gun = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Haftasonu çalıştınız mı :");
+string HaftaSonu =(Console.ReadLine());
+
+Console.WriteLine("İşe geç kaldın mı :");
+int GecKalma = int.Parse(Console.ReadLine());
+
+double ToplamMaas = Gun * GunlukUCret;
+
+if(HaftaSonu=="evet")
+{
+    ToplamMaas += GunlukUCret * 2;
+}
+if(GecKalma==3)
+{
+    ToplamMaas -=250;
+}
+Console.WriteLine("Toplam Maas =" + ToplamMaas);

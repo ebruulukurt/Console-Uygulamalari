@@ -1,0 +1,7 @@
+Console.WriteLine("Doğum Yılın Kaçtır ?");
+int Yil = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Meslek ?");
+string Meslek = Console.ReadLine();
+
+Console.WriteLine(Yil > 2000  && Meslek == "Yazılımcı");

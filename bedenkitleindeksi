@@ -1,0 +1,29 @@
+Beden kitle indeksi = Kilo/boy*boy
+beden kitle indeksi 18'e eşit veya düşük ise zayıf
+18 ile 25 arası normal
+25 den büyükse obez yazdıran program.
+
+            Console.WriteLine("lütfen kilonuzu giriniz :");
+            double kilo = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Boyunuzu giriniz");
+            double boy=double.Parse(Console.ReadLine());
+
+            double beden_kitle_indeks = kilo / (boy * boy);
+            if(beden_kitle_indeks<=18)
+            {
+                Console.WriteLine("Zayıfsınız");
+            }
+            else if(beden_kitle_indeks>18 && beden_kitle_indeks<25)
+            {
+                Console.WriteLine("Normalsiniz");
+            }
+            else if(beden_kitle_indeks>25)
+            {
+                Console.WriteLine("Obezsiniz");
+            }
+            else
+            {
+                Console.WriteLine("İstenilenleri doğru giriniz");
+            }
+            Console.ReadLine();
